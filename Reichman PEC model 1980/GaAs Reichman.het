@@ -1,0 +1,147 @@
+cell parameter:
+
+/general parameters
+MISf:	0 Ohm*cm^2	fraqtion
+initialvaluesfromfile:	false
+initialgridfromfile:	false
+/end of general parameters
+
+/layer
+name:	vacuum/air
+width:	1E-6 cm	layer thickness
+incoherent:	false	incoherent calculation
+n:	1 	optical coefficient n
+k:	0 	optical coefficient k
+/end of layer
+
+
+/frontcontact
+name:	Front contact boundary
+BandBending:	Band-bending
+phi:	4.88 eV	metal work function
+ref:	0 	constant reflection
+abs:	0 	constant absorption
+int_ref:	0 	constant internal reflection
+/end of frontcontact
+
+/interface
+interfacename:	electrolyte interface
+numeric-model:	0	MS-Schottky-Contact
+/modelparameters
+model-name:	MS-Schottky-Contact
+sn:	40 cm/s	electron surface recombination velocity
+sp:	100 cm/s	hole surface recombination velocity
+tunneling_schott:	0 	toggle
+Meffn:	0.98 	Effective electron mass
+Meffp:	0.49 	Effective hole mass
+tunneling_insul:	0 	toggle
+transp_WKB:	0 	toggle
+chi_insul:	1 eV	Electron affinity of insulator
+eg_insul:	9 eV	Insulator band gap energy
+d_insul:	1E-7 cm	Insultor layer thickness
+me_insul:	0.6 	Electron effective mass in insulator
+mh_insul:	0.2 	Hole effective mass in insulator
+dk_insul:	3.9 	Dielectric constant in insulator
+dph_insul:	0 	Pin holes density through the insulator
+me_sc:	1.09 	Electron effective mass in semiconductor
+mh_sc:	1 	Hole effective mass in semiconductor
+/end of modelparameters
+Qif:	0 cm^-3	Interface Charge
+
+no defects
+/end of interface
+
+/layer
+name:	GaAs Reichman
+numeric-model:	0	standard
+functional_dependance:	Constant
+xd_dk:	1E99
+xd_chi:	1E99
+xd_Eg:	1E99
+xd_Egopt:	1E99
+xd_Nc:	1E99
+xd_Nv:	1E99
+xd_me:	1E99
+xd_mh:	1E99
+xd_Na:	1E99
+xd_Nd:	1E99
+xd_ve:	1E99
+xd_vh:	1E99
+xd_rho:	1E99
+xd_rae:	1E99
+xd_rah:	1E99
+xd_rbb:	1E99
+decr_type:	rightside
+xD:	0.0033332222259258
+width:	0.0001 cm	layer thickness
+dk:	12 	dielectric constant
+chi:	4 eV	electron affinity
+Eg:	1.424 eV	bandgap
+Egopt:	1.424 eV	optical bandgap
+Nc:	1E19 cm^-3	effective conduction band density
+Nv:	1E19 cm^-3	effective valence band density
+me:	1107 cm^2/Vs	effective electron mobility
+mh:	100 cm^2/Vs	effective hole mobility
+Na:	0 cm^-3	doping concentration acceptors
+Nd:	1E16 cm^-3	doping concentration donators
+ve:	10000000 cm/s	electron thermal velocity
+vh:	10000000 cm/s	hole thermal velocity
+rho:	2.328 g*cm^-3	layer density
+rae:	0 cm^6/s	auger electron recombination coefficient
+rah:	0 cm^6/s	auger hole recombination coefficient
+rbb:	0 cm^3/s	band to band recombination coefficient
+n:	3.8 	optical coefficient n
+k:	0.16 	optical coefficient k
+incoherent:	false	incoherent calculation
+
+/defect
+name:	Defect_1
+text:	tau 1e-9
+type:	single
+charge:	acceptor
+hurkx:	off
+cn:	1E-12 cm^2	electron thermal cross section
+cp:	1E-12 cm^2	hole thermal cross section
+meff:	0.25 cm^2	efective tunneling mass
+cnplus:	1E-12 cm^2	electron thermal cross section
+cpminus:	1E-12 cm^2	hole thermal cross section
+cnzero:	1E-15 cm^2	electron thermal cross section
+cpzero:	1E-15 cm^2	hole thermal cross section
+cno:	0 cm^2	electron optical cross section
+cpo:	0 cm^2	hole optical cross section
+Ntr:	100000000000000 cm^-3	trap density
+E:	0.561247 eV	characteristic energy
+Ntr specific:	100000000000000 cm^-3/eV	specific trap density
+Taun:	1E-9 s	mean electron lifetime
+Taup:	1E-9 s	mean hole lifetime
+Ln:	0.000169169127743868 cm	mean electron diffusion length
+Lp:	5.08448885366071E-5 cm	mean hole diffusion length
+/end of defect
+/end of layer
+
+/interfacebackside
+interfacename:	Ideal back contact for electrons
+numeric-model:	3	Ideal-Electron-Contact
+Qif:	0 cm^-3	Interface Charge
+
+no defects
+/end of interface
+
+/backcontact
+name:	Back contact boundary
+BandBending:	Flat-band
+ref:	0 	constant reflection
+abs:	0 	constant absorption
+int_ref:	0 	constant internal reflection
+/end of backcontact
+
+/layer
+name:	vacuum/air
+width:	1E-6 cm	layer thickness
+incoherent:	false	incoherent calculation
+n:	1 	optical coefficient n
+k:	0 	optical coefficient k
+/end of layer
+
+
+/end of all layers
