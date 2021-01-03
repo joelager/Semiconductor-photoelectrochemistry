@@ -1,5 +1,5 @@
 # Semiconductor-photoelectrochemistry
-Calculations associated with semiconductors photocathodes and photoanodes
+Calculations associated with semiconductor photocathodes and photoanodes
 
 ## Reichman model, 1980
 The notebook `Reichman PEC model` adapts analyses in 
