@@ -1,6 +1,7 @@
 # Semiconductor-photoelectrochemistry
 Calculations associated with semiconductors photocathodes and photoanodes
 
+## Reichman model, 1980
 The notebook `Reichman PEC model` adapts analyses in 
 >Reichman, J., The current voltage Characteristics of semiconductor-electrolyte junction photovoltaic cells  [*Appl. Phys. Lett.* **1980**, 36, 574-577](http://aip.scitation.org/doi/10.1063/1.91551).  
 
@@ -13,3 +14,10 @@ The comparison of this approach to a full Poisson drift-diffusion solution done 
 Reichman extends the approach of Gärtner but has space charge layer (SCR) recombination, and both electron and hole currents. The example given in the paper is an n-type semiconductor but the approach could be used equally as well for the p-type case. 
 
 Also included are input files which will allow simulations to be done with the AFORS-HET solar cell simulator. 
+
+## Peter model, 1984
+The notebook `Peter PEC model Part ` adapts analyses in  
+> Peter, L. M.; Li, J.; Peat, R. Surface Recombination at Semiconductor Electrodes Part I. Transient and Steady-State Photocurrents. [J. Electroanal. Chem. Interfacial Electrochem. 1984, 165, 29–40](https://linkinghub.elsevier.com/retrieve/pii/S0022072884800844)
+
+In contrast to approach of Reichman (see other notebook), recombination in the space charge region is not considered. Instead, recombination at a surface state is added to the model.
+
