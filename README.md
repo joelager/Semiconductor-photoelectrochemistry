@@ -2,7 +2,7 @@
 Calculations associated with semiconductor photocathodes and photoanodes
 
 ## Reichman model, 1980
-The iPython notebook `Reichman PEC model` adapts analyses in 
+The Jupyter notebook `Reichman PEC model` adapts analyses in 
 >Reichman, J., The current voltage Characteristics of semiconductor-electrolyte junction photovoltaic cells  [*Appl. Phys. Lett.* **1980**, 36, 574-577](http://aip.scitation.org/doi/10.1063/1.91551).  
 
 See also:
@@ -16,7 +16,7 @@ Reichman extends the approach of Gärtner but has space charge layer (SCR) recom
 Also included are input files which will allow simulations to be done with the AFORS-HET solar cell simulator. 
 
 ## Peter model, 1984
-The iPython notebook `Peter PEC model Part I` adapts analyses in  
+The Jupyter notebook `Peter PEC model Part I` adapts analyses in  
 > Peter, L. M.; Li, J.; Peat, R. Surface Recombination at Semiconductor Electrodes Part I. Transient and Steady-State Photocurrents. [J. Electroanal. Chem. Interfacial Electrochem. 1984, 165, 29–40](https://linkinghub.elsevier.com/retrieve/pii/S0022072884800844)
 
 In contrast to approach of Reichman (see other notebook), recombination in the space charge region is not considered. Instead, recombination at a surface state is added to the model.
