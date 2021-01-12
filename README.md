@@ -21,7 +21,7 @@ The Jupyter notebook `Peter PEC model Part I` adapts analyses in
 
 In contrast to approach of Reichman (see other notebook), recombination in the space charge region is not considered. Instead, recombination at a surface state is added to the model.
 
-he Jupyter notebook `Peter PEC model Part III` adapts analyses in  
+The Jupyter notebook `Peter PEC model Part III` adapts analyses in  
 > Li, J.; Peter, L. M. Surface Recombination at Semiconductor Electrodes Part III. Steady-State and Intensity Modulated Photocurrent response. [J. Electroanal. Chem. Interfacial Electrochem. 1985, 193, 27–47](https://linkinghub.elsevier.com/retrieve/pii/0022072885850506).
 
 In this analysis, current to/from the bands and the surface state is considered, allowing full JV curves to be simulated in steady state and as a function of modulation frequency. 
