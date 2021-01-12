@@ -15,9 +15,14 @@ Reichman extends the approach of Gärtner but has space charge layer (SCR) recom
 
 Also included are input files which will allow simulations to be done with the AFORS-HET solar cell simulator. 
 
-## Peter model, 1984
+## Peter models, 1980s
 The Jupyter notebook `Peter PEC model Part I` adapts analyses in  
 > Peter, L. M.; Li, J.; Peat, R. Surface Recombination at Semiconductor Electrodes Part I. Transient and Steady-State Photocurrents. [J. Electroanal. Chem. Interfacial Electrochem. 1984, 165, 29–40](https://linkinghub.elsevier.com/retrieve/pii/S0022072884800844)
 
 In contrast to approach of Reichman (see other notebook), recombination in the space charge region is not considered. Instead, recombination at a surface state is added to the model.
+
+he Jupyter notebook `Peter PEC model Part III` adapts analyses in  
+> Li, J.; Peter, L. M. Surface Recombination at Semiconductor Electrodes Part III. Steady-State and Intensity Modulated Photocurrent response. [J. Electroanal. Chem. Interfacial Electrochem. 1985, 193, 27–47](https://linkinghub.elsevier.com/retrieve/pii/0022072885850506).
+
+In this analysis, current to/from the bands and the surface state is considered, allowing full JV curves to be simulated in steady state and as a function of modulation frequency. 
 
